@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/nunito:n3:default.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>Formularios en HTML</h1>
+	</header>
+<nav>
+		<ul>
+    <li><a href="primera_pagina_2.html" target="_blank">Mi primera página</a></li>
+	<li><a href="listas.html" target="_blank">Listas</a></li>
+    <li><a href="tablas.html" target="_blank">Tablas</a></li>
+    <li><a href="enlaces.html" target="_blank">Enlaces</a></li>
+	<li><a href="imagenes.html" target="_blank">Imágenes</a></li>
+	<li><a href="audio.html" target="_blank">Audio</a></li>
+	<li><a href="video.html" target="_blank">Video</a></li>
+	<li><a href="Formularios.html" target="_blank">Formularios</a></li>
+	<li><a href="animación.html" target="_blank">Animación</a></li>
+	<li><a href="Flexbox.html" target="_blank">Flexbox</a></li>
+	<li><a href="../index.html.html" target="_blank">Index</a></li>
+  </ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Formulario Simple</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates suscipit aperiam expedita modi exercitationem ea, praesentium dolorem repellat nemo.</p>
+			<form action="action_page.html" method="get">
+				<label>Nombre</label>
+				<input type="text" id="nombre" name="nombre">
+				<label>Apellido</label>
+				<input type="text" id="apellidos" name="apellidos">
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+		<section>
+			<h2>Formulario usando un radiobuttom</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita amet voluptates vel rem velit temporibus corrupti modi eveniet quas dignissimos!</p>
+		  	<form id="datos1" name="datos1" action="action_page.html" method="post">
+	         	<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre">
+				<label for="nombre">Apellidos:</label>
+				<input type="text" name="apellidos" id="apellidos">
+				<label>Género&nbsp;</label>
+				<input name="genero" type="radio" id="radio" title="genero" value="femenino">
+				<label for="genero">Femenino&nbsp;</label>
+				<input name="genero" type="radio" id="radio2" title="genero" value="maculino">
+				<label for="genero">Maculino&nbsp;</label>
+				<input name="submit" type="submit" id="submit" formmethod="get" value="Enviar"><br>
+          	</form>
+		</section>
+<section>
+    <h2>Formulario organizado dentro de una tabla</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quia distinctio soluta saepe in incidunt, sed ratione quisquam dignissimos officiis.</p>
+			<form action="action_page.html" method="get">
+				<table width="50%" border:"0">
+				<tbody>
+				<tr>
+					<td><label for="nombre">Nombre</label></td>
+					<td><input type="text" name="nombre" id="nombre"></td>
+				</tr>
+				<tr>
+					<td><label for="nombre">Apellidos:</label></td>
+					<td><input type="text" name="apellidos" id="apellidos"></td>
+				</tr>
+				<tr>
+					<td><label for="edad">Edad</label></td>
+					<td><input type="number" id="edad" name="edad" min="1" max="99"></td>
+				</tr>
+				<tr>
+					<td><input name="submit" type="submit" id="submit" formmethod="get" value="Enviar"></td>
+					<td></td>
+				</tr>
+				</tbody>
+				</table>
+		  </form>
+	  </section>
+		<section>
+		  <h2>Formulario usando checkbox y otros</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita amet voluptates vel rem velit temporibus corrupti modi eveniet quas dignissimos!</p>
+		  <form id="datos2" name="datos1" action="action_page.html" method="post">
+		    <label for="nombre2">Nombre:</label>
+		    <input type="text" name="nombre2" id="nombre2">
+		    <label for="nombre2">Apellidos:</label>
+		    <input type="text" name="apellidos2" id="apellidos2">
+		    <label>Género&nbsp;</label>
+		    <input name="genero" type="radio" id="radio3" title="genero" value="femenino">
+		    <label for="genero2">Femenino&nbsp;</label>
+		    <input name="genero" type="radio" id="radio4" title="genero" value="maculino">
+		    <label for="genero2">Maculino&nbsp;</label>
+			<p>
+			    <label>Elige de la lista el genero musical que más te guste</label><br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="pop" id="musicafavorita_0">
+				Pop</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="rock" id="musicafavorita_0">
+				Rock</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="jazz" id="musicafavorita_0">
+				Jazz</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="blues" id="musicafavorita_0">
+				Blues</label>
+				<br>
+			</p>
+			  <label for:"pais">Nacionalidad</label>
+			  <select name="pais" id="pais">
+			  	<option value="argentina">Argentina</option>
+				<option value="chile">Chile</option>
+				<option value="francia">Francia</option>
+				<option value="cánada">Cánada</option>
+				<option value="méxico">México</option>
+			  </select><br>
+			 <input name="submit2" type="submit" id="submit2" formmethod="get" value="Enviar">
+	      </form>
+		</section>
+		<section>
+			<h2>Formulario 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptates accusamus, ad voluptatibus. Repudiandae, error magnam obcaecati odio vitae recusandae!</p>
+			<form id="datos1" name="datos1" action="action_page.html" method="post">
+				<label>Correo:&nbsp;</label><br>
+				<input type="text" id="correo" name="correo"><br>
+				<label>Confirma Correo:</label><br>
+				<input type="text" id="cofirmar" name="confirmar"><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus consequuntur dicta non sunt pariatur sint maxime earum, minus cupiditate.</p>
+				<label>¿Usa redes sociales?&nbsp;</label><br>
+				<input type="radio" id="radio" name="¿Usa redes sociales?" value="si">
+  				<label for="radio">Sí</label><br>
+  				<input type="radio" id="radio2" name="¿Usa redes sociales?" value="no">
+  				<label for="radio2">No</label><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sit distinctio recusandae nemo minima necessitatibus architecto suscipit odit. Explicabo, quo.</p>
+				<label for="edad">Marca las horas que usas redes sociales en el dia</label><br>
+				<input type="number" id="edad" name="edad" min="1" max="24">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum corrupti delectus quisquam, adipisci? Praesentium asperiores in nemo ducimus ea aliquam.</p>
+				<label>Elige de la lista las redes sociales que más uses</label><br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="instagram" id="musicafavorita_0">
+				Instagram</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="facebook" id="musicafavorita_0">
+				Facebook</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="twitter" id="musicafavorita_0">
+				Twitter</label>
+				<br>
+				<label>
+					<input type="checkbox" name="musica favorita" value="tiktok" id="musicafavorita_0">
+				Tiktok</label>
+				<br>
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum omnis obcaecati eveniet quidem, minima reiciendis! Rem consequuntur repellendus aspernatur sequi.</p>
+			  <label for:"dispositivo">Dispositivo en donde ves redes sociales</label>
+			  <select name="dispositivo" id="dispositivo">
+			  	<option value="celular">Celular</option>
+				<option value="laptop">Laptop</option>
+				<option value="tablet">Tablet</option>
+			  </select><br>
+			<input name="submit" type="submit" id="submit" formmethod="get" value="Enviar">
+          	</form>
+				
+		</section>
+	</main>
+	<footer>
+	  <h5>Elaborado por Juan Carlos Oyarzabal Arellano</h5>
+</footer>
+</body>
+</html>

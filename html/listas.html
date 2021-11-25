@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<!--
+Elaborado por: Juan Carlos Oyarzabal Arellano
+NRC: 201832767 Viernes 11 a 15 hrs-->
+<head>
+	<meta charset="utf-8">
+	<title>Listas en html</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		dt{
+			font-weight: bold;
+			font-size: 24px;
+			color: darkblue;
+		}
+		h1{
+			font-size: 48px;
+			color: aliceblue;
+		}
+		h2{
+			font-size: 36px;
+			color: #540BAF;
+		}
+		header,nav,main,footer{
+			width: 960px;
+			/*height: 100px;*/
+			background-color: #177378;
+			padding: 50px;
+			margin:0 auto;
+		}
+		header{
+			text-align: center;
+		}
+		nav{
+			background-color: #2FEDF7;
+			height: 50px;
+			padding: 10px 50px;
+		}
+		nav ul li {
+   	 		display: inline-block;
+    		margin-left: 10px;
+    		margin-right: 10px;
+    		height: 30px;
+			color: black;
+		}
+		main{
+			background-color: #26BFC7;
+			height: auto;
+		}
+		footer{
+			background-color: #3B7578;
+			height: 60px;
+		}
+		section{
+			width: 760px;
+			height: auto;
+			background-color: #7AF2F9;
+			margin: 20px auto;
+			padding: 20px 20px;
+		}
+		ul,ol{
+			margin: 30px;
+		}
+		dl{
+			margin: 20px;
+		}
+		dt{
+			margin: 10px;
+		}
+		dd{
+			margin: 20px 30px;
+		}
+		footer{
+			text-align: center;
+			color: aliceblue
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>LISTAS EN HTML</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="primera_pagina_2.html" target="_blank">Mi primera página</a></li>
+			<li><a href="listas.html" target="_blank">Listas</a></li>
+			<li><a href="tablas.html" target="_blank">Tablas</a></li>
+			<li><a href="enlaces.html" target="_blank">Enlaces</a></li>
+			<li><a href="imagenes.html" target="_blank">Imágenes</a></li>
+			<li><a href="audio.html" target="_blank">Audio</a></li>
+			<li><a href="video.html" target="_blank">Video</a></li>
+			<li><a href="Formularios.html" target="_blank">Formularios</a></li>
+			<li><a href="animación.html" target="_blank">Animación</a></li>
+			<li><a href="Flexbox.html" target="_blank">Flexbox</a></li>
+			<li><a href="../index.html.html" target="_blank">Index</a></li>
+		</ul>
+	</nav>
+	<main>
+	  <section>
+			<h2>Lista desordenada o de viñetas</h2>
+			<ul>
+			<li>México</li>
+			<li>España</li>
+			<li>Argentina</li>
+			<li>Guatemala</li>
+			<li>Italia</li>
+			</ul>
+</section>
+		<section>
+			<h2>Listas ordenadas o con viñeta numerada</h2>
+			<ol>
+			<li>Grecia</li>
+			<li>Bolivia</li>
+			<li>Canada</li>
+			<li>Australia</li>
+			<li>México</li>
+			</ol>
+		</section>
+	  <section>
+		<h2>Lista mixta</h2>
+			<ul>
+			  <li>México
+				<ol>
+				  <li>Puebla</li>
+				  <li>Verazruz</li>
+				  <li>Baja California</li>
+				  <li>Oaxaca</li>
+				</ol>
+				</li>
+			  <li>España
+				<ol>
+				  <li>Madrid</li>
+				  <li>Andorra</li>
+				  <li>Sevilla</li>
+				  <li>Barcelona</li>
+				</ol>
+				</li>
+			  <li>Argentina
+				<ol>
+				  <li>Buenos Aires</li>
+				  <li>Córdoba</li>
+				  <li>Santa Fe</li>
+				  <li>Río Negro</li>
+				</ol>
+				</li>
+			  <li>Guatemala
+				<ol>
+				  <li>Quetzaltenango</li>
+				  <li>Huehuetenango</li>
+				  <li>Jalapa</li>
+				  <li>San Marcos</li>
+				</ol>
+				</li>
+			  <li>Italia
+				<ol>
+				  <li>Florencia</li>
+				  <li>Venecia</li>
+				  <li>Roma</li>
+				  <li>Pisa</li>
+				  </ol>
+				</li>
+	    </ul>
+		</section>
+		<section>
+			<h2>Lista de descripción</h2>
+			<dl>
+				<dt>Hosting</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dignissimos distinctio quos ipsam, animi, debitis cumque tenetur architecto. Quas officia qui ullam itaque aspernatur repellendus impedit reprehenderit voluptate ea! Totam?</dd>
+				<dt style="font-style: italic">Dominio</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quibusdam non quam illum ea culpa laborum ratione commodi velit cumque! Voluptate optio ipsam, quia, ut quasi distinctio quos itaque molestiae?</dd>
+				<dt style="font-weight: normal">Sitio Web</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas facilis beatae eaque architecto vel alias nulla ullam, praesentium nobis rerum? Rerum consequatur iusto dolorum delectus tenetur, eius eaque facere odit.</dd>
+				<dt>Sistema Web</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi ad reiciendis quia inventore rerum labore sunt necessitatibus, esse maiores officia, in accusamus excepturi quae eius sequi repellat, quasi culpa.</dd>
+			</dl>
+		</section>
+		<section>
+		<h2>Lista con viñeta de imagen</h2>
+			<ul style="list-style-image: url('../imag/estrella.png')">
+			<li>Maria Gomez</li>
+			<li>Juan Hernandez</li>
+			<li>Guadalupe Guerrero</li>
+			<li>Daniel Ozorio</li>
+			<li>Monica Perez</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+	<h4>Elaborado por Juan Carlos Oyarzabal Arellano</h4>
+	</footer>
+</body>
+</html>
